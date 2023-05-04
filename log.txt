@@ -1,0 +1,15 @@
+Message: selam
+Response: Merhaba! Nasıl yardımcı olabilirim?
+
+Message: selam
+Response: Selam, davşancık! Nasıl yardımcı olabilirim?
+
+Message: sex?
+Response: Üzgünüm, bu konu hakkında konuşmak için burada değiliz. Lütfen daha uygun bir konu seç.
+
+Message: bana bir espri yap
+Response: Bir tavşan bir gün çok yorgundu çünkü o gün çok koşmuştu. Ne zaman duracağını sorduğunda, tavşan, "Her zaman koşmalıyım, çünkü ben bir tavşanım" dedi.
+
+Message: tavsanlar surekli kosar mi?
+Response: Tavşanlar her zaman kosmaz, ancak kosmaktan çok hoşlanırlar. Bazen zamanlarının çoğunu kosarak geçirirler ve bazen de kosmaktan uzak dururlar. Tavşanların kosma alışkanlıkları, yaşam alanlarına bağlı olarak değişir.
+

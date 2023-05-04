@@ -6,36 +6,34 @@ import configparser
 # Flask uygulamasını oluştur
 app = Flask(__name__)
 
-# Ayarları oku
+# OpenAI API anahtarı
+openai.api_key = "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"
+
+# Log dosyasını ayarla
+log_file = "log.txt"
+
+# configparser ile ayarlar.cfg dosyasından ayarları oku
 config = configparser.ConfigParser()
 config.read('ayarlar.cfg')
+
+# OpenAI engine ve diğer ayarları oku
+engine = config.get('openai', 'engine')
+temperature = config.getfloat('openai', 'temperature')
+max_tokens = config.getint('openai', 'max_tokens')
+top_p = config.getfloat('openai', 'top_p')
+frequency_penalty = config.getfloat('openai', 'frequency_penalty')
+presence_penalty = config.getfloat('openai', 'presence_penalty')
+
+# prompt içeriğini brief.txt dosyasından oku
+with open("brief.txt", "r", encoding="utf-8") as f:
+    prompt = f.read()
 
 # templates dizinindeki index.html dosyasını sunmak için Flask route oluştur
 @app.route('/')
 def home():
     return render_template('index.html')
 
-# Log dosyasını ayarla
-log_file = "log.txt"
-
-# prompt içeriğini brief.txt dosyasından oku
-with open("brief.txt", "r", encoding="utf-8") as f:
-    prompt = f.read()
-
-# OpenAI API anahtarını ayarla
-openai.api_key = "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"
-
-# OpenAI API istekleri için sözlük oluştur
-openai_settings = {
-    'engine': config['openai']['engine'],
-    'temperature': float(config['openai']['temperature']),
-    'max_tokens': int(config['openai']['max_tokens']),
-    'top_p': float(config['openai']['top_p']),
-    'frequency_penalty': float(config['openai']['frequency_penalty']),
-    'presence_penalty': float(config['openai']['presence_penalty'])
-}
-
-# OpenAI'den yanıt almak için API endpoint'i oluştur
+# OpenAI'dan yanıt almak için API endpoint'i oluştur
 @app.route('/get-response', methods=['POST'])
 def get_response():
     # Get message from client-side form input
@@ -43,9 +41,15 @@ def get_response():
 
     # anıt oluşturmak için OpenAI'nin GPT-3 API'sını çağır
     response = openai.Completion.create(
+        engine=engine,
         prompt=f"{prompt}\n{message}\n",
-        **openai_settings
+        temperature=temperature,
+        max_tokens=max_tokens,
+        top_p=top_p,
+        frequency_penalty=frequency_penalty,
+        presence_penalty=presence_penalty
     )
+
     # OpenAI API yanıtından yanıt metnini ayıkla
     bot_response = response.choices[0].text.strip()
 
