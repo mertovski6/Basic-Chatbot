@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta charset="utf-8">
+	<title>OpenAI Chatbot</title>
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	<!--  Load CSS in Flask with html-->
+    <link rel="stylesheet" href='/static/styles/mainpage.css' />
+ 
+<!--  Load JavaScript in Flask with html-->
+
+</head>
+<body>
+	<div class="logo-container">
+		<img src="/static/images/logo.png" width="64" height="64" class="logo">
+		<h1 class="tagline">Black Rabbit</h1>
+	</div>
+
+	<div class="container">
+		<form id="message-form">
+			<label for="message">Enter your message:</label>
+			<input type="text" id="message" name="message" placeholder="Type your message here...">
+			<input type="submit" value="Send">
+		</form>
+		<div class="messages" id="messages">
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			// Submit message form
+			$("#message-form").submit(function(event) {
+				event.preventDefault();
+				sendMessage();
+			});
+
+			// Send message to server and add bot response to messages div
+			function sendMessage() {
+  var message = $("#message").val();
+  if (!message) {
+    return;
+  }
+  var timestamp = new Date().toLocaleString();
+  $("#messages").append('<div class="message">' + message + '<div class="timestamp">' + timestamp + '</div></div>');
+  $("#message").val('');
+  $.ajax({
+    type: "POST",
+    url: "/get-response",
+    contentType: "application/json;charset=UTF-8",
+    data: JSON.stringify({message: message}),
+    success: function(response) {
+      var botResponse = response.message;
+      var botTimestamp = new Date().toLocaleString();
+      $("#messages").append('<div class="bot-message">' + botResponse + '<div class="timestamp">' + botTimestamp + '</div></div>');
+      $("#messages").scrollTop($("#messages")[0].scrollHeight);
+    }
+  });
+}
+
+		});
+	</script>
+</body>
+</html>
