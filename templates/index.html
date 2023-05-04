@@ -5,10 +5,10 @@
   <meta charset="utf-8">
 	<title>OpenAI Chatbot</title>
 	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-	<!--  Load CSS in Flask with html-->
+	<!--  Flask'te CSS dosyasını yükle-->
     <link rel="stylesheet" href='/static/styles/mainpage.css' />
  
-<!--  Load JavaScript in Flask with html-->
+<!-- Flask'te JavaScript dosyasını yükle-->
 
 </head>
 <body>
@@ -30,13 +30,13 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script>
 		$(document).ready(function() {
-			// Submit message form
+			// Mesaj formunu gönder
 			$("#message-form").submit(function(event) {
 				event.preventDefault();
 				sendMessage();
 			});
 
-			// Send message to server and add bot response to messages div
+			// Mesajı sunucuya gönder ve bot cevabını mesajlar bölümüne ekle
 			function sendMessage() {
   var message = $("#message").val();
   if (!message) {
