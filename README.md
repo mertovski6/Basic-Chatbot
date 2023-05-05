@@ -111,7 +111,8 @@ instagram: mertcvn.jpg
 
 ##
 
-## GNU GENEL KAMU LİSANSI
+## Lisans Bilgileri
+# GNU GENEL KAMU LİSANSI
 `Sürüm 3, 29 Haziran 2007`
 
 Telif © 2007 Free Software Foundation, Inc. <http://fsf.org/>
