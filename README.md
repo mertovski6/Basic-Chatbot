@@ -36,7 +36,7 @@ instagram: mertcvn.jpg
 
 
 
-# TURKCE
+## TURKCE
 <details>
   <summary>TURKCE KURULUM REHBERI</summary>
 
