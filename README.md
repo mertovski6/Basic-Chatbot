@@ -46,7 +46,24 @@ Bu, OpenAI'nin GPT-3 API'sini kullanarak bir chatbot uygulamasıdır. Flask web 
 
 - # Kullanım
 
-Bu uygulamayı kullanmak için önce `ayarlar.cfg` dosyasında OpenAI API anahtarınızı ayarlamanız gerekir. Ayrıca `openai_settings` sözlüğünü, GPT-3 API'si isteklerinde kullanmak istediğiniz ayarlarla özelleştirebilirsiniz.
+Bu uygulamayı kullanmak için önce `ayarlar.cfg` dosyasında OpenAI API anahtarınızı ayarlamanız gerekir. 
+Ayrıca `openai_settings` sözlüğünü, GPT-3 API'si isteklerinde kullanmak istediğiniz ayarlarla özelleştirebilirsiniz.
+
+# Ayarlar.cfg
+<details>
+  <summary>**Ayarlar.cfg**</summary>
+
+'''
+[openai]
+engine = Bu parametre, OpenAI'nin sunucularında barındırılan GPT-3 modelinin hangi sürümünü kullanacağını belirler.
+temperature = Bu parametre, modelin çıktısındaki varyasyonu kontrol eder. Daha yüksek bir temperature degeri, daha yaratıcı ve riskli cevaplar üretebilirken, daha düşük bir temperature daha güvenli ve tekrar edilebilir cevaplar üretir.
+max_tokens = Bu parametre, modelin üreteceği cevabın maksimum uzunluğunu belirler. 
+top_p =  Bu parametre, modelin olası sonuçları sıralarken kullanacağı olasılık sınırını belirler. Daha yüksek bir Top_p değeri, modelin daha geniş bir yelpazede cevaplar üretmesine izin verir.
+frequency_penalty = Bu parametre, modelin belirli kelimeleri veya ifadeleri tekrar etme eğilimini azaltır. Daha yüksek bir frequency penalty, modelin tekrarlı cevapları azaltmasına yol açabilir.
+presence_penalty = Bu parametre, modelin belirli kelimeleri veya ifadeleri cevapta kullanma eğilimini azaltır. Daha yüksek bir presence penalty, modelin belirli kelimeleri cevapta kullanma sıklığını azaltmasına yol açabilir.
+
+'''
+</details>
 
 Uygulamayı başlatmak için, komut satırında şu komutu çalıştırın:
 
