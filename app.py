@@ -23,7 +23,7 @@ with open("brief.txt", "r", encoding="utf-8") as f:
     prompt = f.read()
 
 # OpenAI API anahtarını ayarla
-openai.api_key = "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"
+openai.api_key = "OPENAI_API_KEY"  # API anahtarınızı buraya girin
 
 # OpenAI API istekleri için sözlük oluştur
 openai_settings = {
