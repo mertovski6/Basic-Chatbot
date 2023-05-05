@@ -51,7 +51,7 @@ Ayrıca `openai_settings` sözlüğünü, GPT-3 API'si isteklerinde kullanmak is
 
 # Ayarlar.cfg
 <details>
-  <summary>**Ayarlar.cfg**</summary>
+  <summary>cfg dosyasindaki ayarlarin aciklamalari</summary>
 
 ```
 [openai]
