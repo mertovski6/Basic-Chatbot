@@ -109,10 +109,12 @@ instagram: mertcvn.jpg
 </details>
 
 
-GNU GENEL KAMU LİSANSI
+####
+
+## GNU GENEL KAMU LİSANSI
                           Sürüm 3, 29 Haziran 2007
 
-Telif (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
+Telif © 2007 Free Software Foundation, Inc. <http://fsf.org/>
 Herkes bu programı kopyalayabilir ve dağıtabilir, değiştirebilir ve
 programın kaynak kodunu isteyenlere vermek zorundadır. Herkes bu
 programı ticari olarak kullanabilir ve hatta bunu özgür olmayan
