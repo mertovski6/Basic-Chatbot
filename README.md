@@ -1,6 +1,6 @@
 ## ENGLISH
 <details>
-  <summary>Click to expand menu</summary>
+  <summary>ENGLISH INSTALLATION GUIDE</summary>
   # GPT-3 Based Chatbot
 
 This is a chatbot application that uses OpenAI's GPT-3 API. The Flask web application sends messages from the user through a web page to the OpenAI API and displays the response from the API on the web page.
@@ -33,12 +33,12 @@ If you have any questions or feedback regarding this application, please feel fr
 
 ## TURKCE
 <details>
-  <summary>Click to expand menu</summary>
-# GPT-3 Tabanlı Kişiselleştirilmiş Chatbot
+  <summary>TURKCE KURULUM REHBERI</summary>
+- GPT-3 Tabanlı Kişiselleştirilmiş Chatbot
 
 Bu, OpenAI'nin GPT-3 API'sini kullanarak bir chatbot uygulamasıdır. Flask web uygulaması, bir web sayfası aracılığıyla kullanıcıdan gelen mesajları OpenAI API'sine gönderir ve API'den gelen yanıtı mesaj baloncuğunda gösterir.
 
-## Kullanım
+- ## Kullanım
 
 Bu uygulamayı kullanmak için önce `ayarlar.cfg` dosyasında OpenAI API anahtarınızı ayarlamanız gerekir. Ayrıca `openai_settings` sözlüğünü, GPT-3 API'si isteklerinde kullanmak istediğiniz ayarlarla özelleştirebilirsiniz.
 
@@ -50,13 +50,13 @@ python app.py
 
 Uygulama başarıyla başlatıldıktan sonra, tarayıcınızda `http://localhost:3131` adresini açın ve chatbot'la konuşmaya başlayabilirsiniz.
 
-## Uyarılar
+- ## Uyarılar
 
 - Bu uygulamayı kullanmak için OpenAI API üyeliğiniz olması gerekmektedir.
 - Bu uygulama, kullanıcının gönderdiği mesajları kaydeden bir log dosyası oluşturur. Kullanıcı gizliliği için bu log dosyası güvenli bir şekilde saklanmalıdır.
 - Bu uygulamanın yalnızca test amaçlı kullanılması önerilir. Gerçek dünya uygulamalarında kullanılacak chatbot'lar, daha kapsamlı bir eğitim ve doğrulama sürecinden geçmelidir.
 
-## İletişim
+- ## İletişim
 
 Bu uygulamayla ilgili herhangi bir sorunuz veya geri bildiriminiz varsa, lütfen bana ulaşın.
 ```
@@ -67,3 +67,15 @@ instagram: mertcvn.jpg
 </details>
 
 
+
+
+
+
+
+<details>
+  <summary>Click to expand menu</summary>
+
+  - GPT-3 Tabanlı Kişiselleştirilmiş Chatbot
+  - # GPT-3 Tabanlı Kişiselleştirilmiş Chatbot
+  - Item 3
+</details>
