@@ -121,5 +121,4 @@ programı ticari olarak kullanabilir ve hatta bunu özgür olmayan
 programların parçası olarak dağıtabilir, ama bu durumda bile
 kaynak kodunu vermek zorundadır. 
 
-Daha fazla detay için lisansı inceleyiniz.
-
+Daha fazla detay için lisansı inceleyiniz. xd
