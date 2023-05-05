@@ -121,25 +121,3 @@ kaynak kodunu vermek zorundadır.
 
 Daha fazla detay için lisansı inceleyiniz.
 
-
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Proje Adı</title>
-</head>
-<body>
-	<h1>Lisans Bilgisi</h1>
-	<p>Bu proje GNU Genel Kamu Lisansı v3.0 ile lisanslanmıştır.</p>
-	<p>
-		<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
-			<img alt="Creative Commons License" style="border-width:0"
-			src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
-		</a>
-	</p>
-	<p>
-		Bu çalışma Creative Commons Attribution-NonCommercial 4.0 International License ile lisanslanmıştır.
-		<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Lisans metnine buradan ulaşabilirsiniz</a>.
-	</p>
-</body>
-</html>
