@@ -53,7 +53,7 @@ Ayrıca `openai_settings` sözlüğünü, GPT-3 API'si isteklerinde kullanmak is
 <details>
   <summary>**Ayarlar.cfg**</summary>
 
-'''
+```
 [openai]
 engine = Bu parametre, OpenAI'nin sunucularında barındırılan GPT-3 modelinin hangi sürümünü kullanacağını belirler.
 temperature = Bu parametre, modelin çıktısındaki varyasyonu kontrol eder. Daha yüksek bir temperature degeri, daha yaratıcı ve riskli cevaplar üretebilirken, daha düşük bir temperature daha güvenli ve tekrar edilebilir cevaplar üretir.
@@ -62,7 +62,7 @@ top_p =  Bu parametre, modelin olası sonuçları sıralarken kullanacağı olas
 frequency_penalty = Bu parametre, modelin belirli kelimeleri veya ifadeleri tekrar etme eğilimini azaltır. Daha yüksek bir frequency penalty, modelin tekrarlı cevapları azaltmasına yol açabilir.
 presence_penalty = Bu parametre, modelin belirli kelimeleri veya ifadeleri cevapta kullanma eğilimini azaltır. Daha yüksek bir presence penalty, modelin belirli kelimeleri cevapta kullanma sıklığını azaltmasına yol açabilir.
 
-'''
+```
 </details>
 
 Uygulamayı başlatmak için, komut satırında şu komutu çalıştırın:
