@@ -1,6 +1,6 @@
 ## ENGLISH
 <details>
-  <summary>ENGLISH INSTALLATION GUIDE</summary>
+  <summary><strong>ENGLISH INSTALLATION GUIDE<strong></summary>
   
 ## GPT-3 Based Chatbot
 
@@ -9,6 +9,25 @@ This is a chatbot application that uses OpenAI's GPT-3 API. The Flask web applic
 # Usage
 
 To use this application, you need to first set your OpenAI API key in the `config.cfg` file. You can also customize the `openai_settings` dictionary with the settings you want to use in your GPT-3 API requests.
+
+# Config.cfg
+
+
+<details>
+  <summary><strong>dictionary of configuration parameters<strong></summary>
+
+```
+[openai]
+engine = This parameter determines which version of the GPT-3 model hosted on OpenAI's servers to use.
+temperature = This parameter controls the variation in the model's output. Higher temperature can result in more creative and risky responses, while lower temperature produces safer and more repeatable responses.
+max_tokens = This parameter sets the maximum length of the response that the model will generate.
+top_p = This parameter sets the probability threshold that the model uses when ranking possible results. A higher Top_p value allows the model to generate responses across a wider range.
+frequency_penalty = This parameter reduces the model's tendency to repeat certain words or phrases in its response. Increasing the frequency penalty may cause the model to reduce its use of repetitive responses.
+presence_penalty = This parameter reduces the model's tendency to use certain words or phrases in its response. Increasing the presence penalty may cause the model to reduce its use of certain words in its responses.
+
+```
+</details>
+
 
 To start the application, run the following command in the command line:
 
@@ -38,7 +57,7 @@ instagram: mertcvn.jpg
 
 ## TURKCE
 <details>
-  <summary>TURKCE KURULUM REHBERI</summary>
+  <summary><strong>TURKCE KURULUM REHBERI<strong></summary>
 
 ## GPT-3 Tabanlı Kişiselleştirilmiş Chatbot
 
@@ -51,7 +70,7 @@ Ayrıca `openai_settings` sözlüğünü, GPT-3 API'si isteklerinde kullanmak is
 
 # Ayarlar.cfg
 <details>
-  <summary>cfg dosyasindaki ayarlarin aciklamalari</summary>
+  <summary><strong>cfg dosyasindaki ayarlarin aciklamalari<strong></summary>
 
 ```
 [openai]
