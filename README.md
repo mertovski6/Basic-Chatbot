@@ -1,5 +1,7 @@
 ## ENGLISH
-# GPT-3 Based Chatbot
+<details>
+  <summary>Click to expand menu</summary>
+  # GPT-3 Based Chatbot
 
 This is a chatbot application that uses OpenAI's GPT-3 API. The Flask web application sends messages from the user through a web page to the OpenAI API and displays the response from the API on the web page.
 
@@ -24,10 +26,14 @@ After the application is successfully started, open `http://localhost:3131` in y
 ## Contact
 
 If you have any questions or feedback regarding this application, please feel free to contact me.
+</details>
 
 
 
 
+## TURKCE
+<details>
+  <summary>Click to expand menu</summary>
 # GPT-3 Tabanlı Kişiselleştirilmiş Chatbot
 
 Bu, OpenAI'nin GPT-3 API'sini kullanarak bir chatbot uygulamasıdır. Flask web uygulaması, bir web sayfası aracılığıyla kullanıcıdan gelen mesajları OpenAI API'sine gönderir ve API'den gelen yanıtı mesaj baloncuğunda gösterir.
@@ -58,3 +64,6 @@ discord: mertcan#0001
 instagram: mertcvn.jpg
 
 ```
+</details>
+
+
