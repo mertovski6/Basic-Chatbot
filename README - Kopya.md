@@ -1,33 +1,3 @@
-## ENGLISH
-# GPT-3 Based Chatbot
-
-This is a chatbot application that uses OpenAI's GPT-3 API. The Flask web application sends messages from the user through a web page to the OpenAI API and displays the response from the API on the web page.
-
-## Usage
-
-To use this application, you need to first set your OpenAI API key in the `config.cfg` file. You can also customize the `openai_settings` dictionary with the settings you want to use in your GPT-3 API requests.
-
-To start the application, run the following command in the command line:
-
-```
-python app.py
-```
-
-After the application is successfully started, open `http://localhost:3131` in your browser and start talking to the chatbot.
-
-## Warnings
-
-- Before using this application, you need to acquire an OpenAI API membership.
-- This application creates a log file that records the messages sent by the user. For user privacy, this log file should be stored securely.
-- This application is recommended to be used for testing purposes only. Chatbots that will be used in real-world applications should go through a more comprehensive training and validation process.
-
-## Contact
-
-If you have any questions or feedback regarding this application, please feel free to contact me.
-
-
-
-
 # GPT-3 Tabanlı Kişiselleştirilmiş Chatbot
 
 Bu, OpenAI'nin GPT-3 API'sini kullanarak bir chatbot uygulamasıdır. Flask web uygulaması, bir web sayfası aracılığıyla kullanıcıdan gelen mesajları OpenAI API'sine gönderir ve API'den gelen yanıtı mesaj baloncuğunda gösterir.
