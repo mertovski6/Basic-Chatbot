@@ -11,22 +11,19 @@ This is a chatbot application that uses OpenAI's GPT-3 API. The Flask web applic
 To use this application, you need to first set your OpenAI API key in the `app.py` file. 
 You can also customize the `ayarlar.cfg` file with the settings you want to use in your GPT-3 API requests.
 
+
+
 # Config.cfg
-
-
 <details>
   <summary><strong>dictionary of configuration parameters<strong></summary>
 
-```
-[openai]
-engine = This parameter determines which version of the GPT-3 model hosted on OpenAI's servers to use.
-temperature = This parameter controls the variation in the model's output. Higher temperature can result in more creative and risky responses, while lower temperature produces safer and more repeatable responses.
-max_tokens = This parameter sets the maximum length of the response that the model will generate.
-top_p = This parameter sets the probability threshold that the model uses when ranking possible results. A higher Top_p value allows the model to generate responses across a wider range.
-frequency_penalty = This parameter reduces the model's tendency to repeat certain words or phrases in its response. Increasing the frequency penalty may cause the model to reduce its use of repetitive responses.
-presence_penalty = This parameter reduces the model's tendency to use certain words or phrases in its response. Increasing the presence penalty may cause the model to reduce its use of certain words in its responses.
-
-```
+- `prompt`: The user's input as a string.
+- `model`: The GPT-3 model to use, e.g. "text-davinci-002".
+- `temperature`: Controls the "creativity" of the generated text. Higher values result in more creative responses.
+- `max_tokens`: The maximum number of tokens (words) to generate in the response.
+- `top_p`: The maximum probability of selecting a candidate response.
+- `frequency_penalty`: The amount of penalty to apply to tokens that have been recently generated. Higher values result in less repetition in the generated text.
+- `presence_penalty`: The amount of penalty to apply to tokens that have been generated in the prompt. Higher values result in more novelty in the generated text.
 </details>
 
 
