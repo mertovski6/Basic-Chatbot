@@ -60,7 +60,7 @@ instagram: mertcvn.jpg
 ## GPT-3 Tabanlı Kişiselleştirilmiş Chatbot
 
 Bu, OpenAI'nin GPT-3 API'sini kullanarak bir chatbot uygulamasıdır. Flask web uygulaması, bir web sayfası aracılığıyla kullanıcıdan gelen mesajları OpenAI API'sine gönderir ve API'den gelen yanıtı mesaj baloncuğunda gösterir.
-
+brief.txt dosyası ise, OpenAI API'si için bir başlangıç metni veya bir "prompt" içeren bir dosyadır. Bu dosya, uygulama tarafından OpenAI API'sine gönderilen her istek için kullanılır ve her istek, prompt ile birlikte OpenAI API'sine gönderilir. OpenAI API'si, prompt'ı kullanarak bir yanıt üretir ve bu yanıt uygulama tarafından alınır ve kullanıcının web sayfasında görmesi için sunulur.
 - # Kullanım
 
 Bu uygulamayı kullanmak için önce `app.py` dosyasında OpenAI API anahtarınızı ayarlamanız gerekir. 
@@ -71,13 +71,15 @@ Ayrıca `ayarlar.cfg` dosayasını, GPT-3 API'si isteklerinde kullanmak istediğ
   <summary><strong>cfg dosyasindaki ayarlarin aciklamalari<strong></summary>
 
 ```
-[openai]
-engine = Bu parametre, OpenAI'nin sunucularında barındırılan GPT-3 modelinin hangi sürümünü kullanacağını belirler.
-temperature = Bu parametre, modelin çıktısındaki varyasyonu kontrol eder. Daha yüksek bir temperature degeri, daha yaratıcı ve riskli cevaplar üretebilirken, daha düşük bir temperature daha güvenli ve tekrar edilebilir cevaplar üretir.
-max_tokens = Bu parametre, modelin üreteceği cevabın maksimum uzunluğunu belirler. 
-top_p =  Bu parametre, modelin olası sonuçları sıralarken kullanacağı olasılık sınırını belirler. Daha yüksek bir Top_p değeri, modelin daha geniş bir yelpazede cevaplar üretmesine izin verir.
-frequency_penalty = Bu parametre, modelin belirli kelimeleri veya ifadeleri tekrar etme eğilimini azaltır. Daha yüksek bir frequency penalty, modelin tekrarlı cevapları azaltmasına yol açabilir.
-presence_penalty = Bu parametre, modelin belirli kelimeleri veya ifadeleri cevapta kullanma eğilimini azaltır. Daha yüksek bir presence penalty, modelin belirli kelimeleri cevapta kullanma sıklığını azaltmasına yol açabilir.
+
+- `prompt`: The user's input as a string.
+- `engine`: Bu parametre, OpenAI'nin sunucularında barındırılan GPT-3 modelinin hangi sürümünü kullanacağını belirler.
+- `temperature`: Bu parametre, modelin çıktısındaki varyasyonu kontrol eder. Daha yüksek bir temperature degeri, daha yaratıcı ve riskli cevaplar üretebilirken, daha düşük bir temperature daha güvenli ve tekrar edilebilir cevaplar üretir.
+- `max_tokens`: The maximum number of tokens (words) to generate in the response.
+- `top_p`: Bu parametre, modelin olası sonuçları sıralarken kullanacağı olasılık sınırını belirler. Daha yüksek bir Top_p değeri, modelin daha geniş bir yelpazede cevaplar üretmesine izin verir.
+- `frequency_penalty`: Bu parametre, modelin belirli kelimeleri veya ifadeleri tekrar etme eğilimini azaltır. Daha yüksek bir frequency penalty, modelin tekrarlı cevapları azaltmasına yol açabilir.
+- `presence_penalty`: Bu parametre, modelin belirli kelimeleri veya ifadeleri cevapta kullanma eğilimini azaltır. Daha yüksek bir presence penalty, modelin belirli kelimeleri cevapta kullanma sıklığını azaltmasına yol açabilir.
+
 
 ```
 </details>
@@ -105,3 +107,39 @@ instagram: mertcvn.jpg
 
 ```
 </details>
+
+
+GNU GENEL KAMU LİSANSI
+                          Sürüm 3, 29 Haziran 2007
+
+Telif (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
+Herkes bu programı kopyalayabilir ve dağıtabilir, değiştirebilir ve
+programın kaynak kodunu isteyenlere vermek zorundadır. Herkes bu
+programı ticari olarak kullanabilir ve hatta bunu özgür olmayan
+programların parçası olarak dağıtabilir, ama bu durumda bile
+kaynak kodunu vermek zorundadır. 
+
+Daha fazla detay için lisansı inceleyiniz.
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proje Adı</title>
+</head>
+<body>
+	<h1>Lisans Bilgisi</h1>
+	<p>Bu proje GNU Genel Kamu Lisansı v3.0 ile lisanslanmıştır.</p>
+	<p>
+		<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+			<img alt="Creative Commons License" style="border-width:0"
+			src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
+		</a>
+	</p>
+	<p>
+		Bu çalışma Creative Commons Attribution-NonCommercial 4.0 International License ile lisanslanmıştır.
+		<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Lisans metnine buradan ulaşabilirsiniz</a>.
+	</p>
+</body>
+</html>
