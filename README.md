@@ -8,7 +8,8 @@ This is a chatbot application that uses OpenAI's GPT-3 API. The Flask web applic
 
 # Usage
 
-To use this application, you need to first set your OpenAI API key in the `config.cfg` file. You can also customize the `openai_settings` dictionary with the settings you want to use in your GPT-3 API requests.
+To use this application, you need to first set your OpenAI API key in the `app.py` file. 
+You can also customize the `ayarlar.cfg` file with the settings you want to use in your GPT-3 API requests.
 
 # Config.cfg
 
@@ -65,8 +66,8 @@ Bu, OpenAI'nin GPT-3 API'sini kullanarak bir chatbot uygulamasıdır. Flask web 
 
 - # Kullanım
 
-Bu uygulamayı kullanmak için önce `ayarlar.cfg` dosyasında OpenAI API anahtarınızı ayarlamanız gerekir. 
-Ayrıca `openai_settings` sözlüğünü, GPT-3 API'si isteklerinde kullanmak istediğiniz ayarlarla özelleştirebilirsiniz.
+Bu uygulamayı kullanmak için önce `app.py` dosyasında OpenAI API anahtarınızı ayarlamanız gerekir. 
+Ayrıca `ayarlar.cfg` dosayasını, GPT-3 API'si isteklerinde kullanmak istediğiniz ayarlarla özelleştirebilirsiniz.
 
 # Ayarlar.cfg
 <details>
