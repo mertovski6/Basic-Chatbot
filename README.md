@@ -109,7 +109,7 @@ instagram: mertcvn.jpg
 </details>
 
 
-## Lisans bilgileri
+##
 
 ## GNU GENEL KAMU LİSANSI
 `Sürüm 3, 29 Haziran 2007`
