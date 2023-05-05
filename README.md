@@ -77,5 +77,5 @@ instagram: mertcvn.jpg
 
   - GPT-3 Tabanlı Kişiselleştirilmiş Chatbot
   - # GPT-3 Tabanlı Kişiselleştirilmiş Chatbot
-  - Item 3
+  # GPT-3 Tabanlı Kişiselleştirilmiş Chatbot
 </details>
