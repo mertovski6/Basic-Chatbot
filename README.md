@@ -17,13 +17,12 @@ You can also customize the `ayarlar.cfg` file with the settings you want to use 
 <details>
   <summary><strong>dictionary of configuration parameters<strong></summary>
 
-- `prompt`: The user's input as a string.
-- `model`: The GPT-3 model to use, e.g. "text-davinci-002".
-- `temperature`: Controls the "creativity" of the generated text. Higher values result in more creative responses.
-- `max_tokens`: The maximum number of tokens (words) to generate in the response.
-- `top_p`: The maximum probability of selecting a candidate response.
-- `frequency_penalty`: The amount of penalty to apply to tokens that have been recently generated. Higher values result in less repetition in the generated text.
-- `presence_penalty`: The amount of penalty to apply to tokens that have been generated in the prompt. Higher values result in more novelty in the generated text.
+- ```model```: The GPT-3 model to use, e.g. "text-davinci-002".
+- ```temperature```: Controls the "creativity" of the generated text. Higher values result in more creative responses.
+- ```max_tokens```: The maximum number of tokens (words) to generate in the response.
+- ```top_p```: The maximum probability of selecting a candidate response.
+- ```frequency_penalty```: The amount of penalty to apply to tokens that have been recently generated. Higher values result in less repetition in the generated text.
+- ```presence_penalty```: The amount of penalty to apply to tokens that have been generated in the prompt. Higher values result in more novelty in the generated text.
 </details>
 
 
@@ -33,7 +32,7 @@ To start the application, run the following command in the command line:
 python app.py
 ```
 
-After the application is successfully started, open `http://localhost:3131` in your browser and start talking to the chatbot.
+After the application is successfully started, open `http://localhost:5000` in your browser and start talking to the chatbot.
 
 # Warnings
 
@@ -70,18 +69,14 @@ Ayrıca `ayarlar.cfg` dosayasını, GPT-3 API'si isteklerinde kullanmak istediğ
 <details>
   <summary><strong>cfg dosyasindaki ayarlarin aciklamalari<strong></summary>
 
-```
 
-- `prompt`: The user's input as a string.
-- `engine`: Bu parametre, OpenAI'nin sunucularında barındırılan GPT-3 modelinin hangi sürümünü kullanacağını belirler.
-- `temperature`: Bu parametre, modelin çıktısındaki varyasyonu kontrol eder. Daha yüksek bir temperature degeri, daha yaratıcı ve riskli cevaplar üretebilirken, daha düşük bir temperature daha güvenli ve tekrar edilebilir cevaplar üretir.
-- `max_tokens`: The maximum number of tokens (words) to generate in the response.
-- `top_p`: Bu parametre, modelin olası sonuçları sıralarken kullanacağı olasılık sınırını belirler. Daha yüksek bir Top_p değeri, modelin daha geniş bir yelpazede cevaplar üretmesine izin verir.
-- `frequency_penalty`: Bu parametre, modelin belirli kelimeleri veya ifadeleri tekrar etme eğilimini azaltır. Daha yüksek bir frequency penalty, modelin tekrarlı cevapları azaltmasına yol açabilir.
-- `presence_penalty`: Bu parametre, modelin belirli kelimeleri veya ifadeleri cevapta kullanma eğilimini azaltır. Daha yüksek bir presence penalty, modelin belirli kelimeleri cevapta kullanma sıklığını azaltmasına yol açabilir.
+- ```engine```: Bu parametre, OpenAI'nin sunucularında barındırılan GPT-3 modelinin hangi sürümünü kullanacağını belirler.
+- ```temperature```: Bu parametre, modelin çıktısındaki varyasyonu kontrol eder. Daha yüksek bir temperature degeri, daha yaratıcı ve riskli cevaplar üretebilirken, daha düşük bir temperature daha güvenli ve tekrar edilebilir cevaplar üretir.
+- ```max_tokens```: The maximum number of tokens (words) to generate in the response.
+- ```top_p```: Bu parametre, modelin olası sonuçları sıralarken kullanacağı olasılık sınırını belirler. Daha yüksek bir Top_p değeri, modelin daha geniş bir yelpazede cevaplar üretmesine izin verir.
+- ```frequency_penalty```: Bu parametre, modelin belirli kelimeleri veya ifadeleri tekrar etme eğilimini azaltır. Daha yüksek bir frequency penalty, modelin tekrarlı cevapları azaltmasına yol açabilir.
+- ```presence_penalty```: Bu parametre, modelin belirli kelimeleri veya ifadeleri cevapta kullanma eğilimini azaltır. Daha yüksek bir presence penalty, modelin belirli kelimeleri cevapta kullanma sıklığını azaltmasına yol açabilir.
 
-
-```
 </details>
 
 Uygulamayı başlatmak için, komut satırında şu komutu çalıştırın:
@@ -90,7 +85,7 @@ Uygulamayı başlatmak için, komut satırında şu komutu çalıştırın:
 python app.py
 ```
 
-Uygulama başarıyla başlatıldıktan sonra, tarayıcınızda `http://localhost:3131` adresini açın ve chatbot'la konuşmaya başlayabilirsiniz.
+Uygulama başarıyla başlatıldıktan sonra, tarayıcınızda `http://localhost:5000` adresini açın ve chatbot'la konuşmaya başlayabilirsiniz.
 
 - # Uyarılar
 

@@ -10,20 +10,22 @@ app = Flask(__name__)
 config = configparser.ConfigParser()
 config.read('ayarlar.cfg')
 
+# OpenAI API anahtarını ayarla
+openai.api_key = "OPENAI_API_KEY"  # API anahtarınızı buraya girin
+
+
 # templates dizinindeki index.html dosyasını sunmak için Flask route oluştur
 @app.route('/')
 def home():
     return render_template('index.html')
 
-# Log dosyasını ayarla
-log_file = "log.txt"
+
 
 # prompt içeriğini brief.txt dosyasından oku
 with open("brief.txt", "r", encoding="utf-8") as f:
     prompt = f.read()
 
-# OpenAI API anahtarını ayarla
-openai.api_key = "OPENAI_API_KEY"  # API anahtarınızı buraya girin
+
 
 # OpenAI API istekleri için sözlük oluştur
 openai_settings = {
@@ -56,5 +58,9 @@ def get_response():
 
     return jsonify({'message': bot_response})
 
+# Log dosyasını ayarla
+log_file = "log.txt"
+
+
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=3131)
+    app.run()
