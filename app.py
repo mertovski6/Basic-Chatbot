@@ -2,6 +2,9 @@ from flask import Flask, render_template, request, jsonify
 import openai
 import os
 import configparser
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
 # Flask uygulamasını oluştur
 app = Flask(__name__)
@@ -11,7 +14,8 @@ config = configparser.ConfigParser()
 config.read('ayarlar.cfg')
 
 # OpenAI API anahtarını ayarla
-openai.api_key = "OPENAI_API_KEY"  # API anahtarınızı buraya girin
+openai_key=os.getenv("OPENAI_API_KEY")
+openai.api_key = openai_key
 
 
 # templates dizinindeki index.html dosyasını sunmak için Flask route oluştur
@@ -63,4 +67,6 @@ log_file = "log.txt"
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
+    
+    app.run(host='0.0.0.0', port=(int(os.environ.get('5000'))))
